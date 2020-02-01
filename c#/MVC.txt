@@ -1,0 +1,142 @@
+QUE ES UN WEB API?
+Es un conjunto de interfaces definidas la cuales permiten a un conjunto de aplicaciones externas consumir el software de la aplicacion web.
+Un api permite que dos aplicaciones distintas puedan comunicarse entre si.
+
+QUE ES REST?
+Representational State Transfer
+
+Es un estilo de construir servicios web los cuales se adhieren a un conjunto de principios establecidos.
+Cuando un api cumple con ciertos principios se puede decir que es rest full.
+
+Utilizacion de metodos http sobre la url.
+
+http crud no es rest.
+
+no es obligatorio ser rest.
+
+6 condiciones de rest.
+arqutectura cliente-servidor
+
+-identificacion de recurso:
+--utlizacion de urls para identificar los recursos
+
+-Manipulacion de recusos usando representaciones
+--El uso de metodos http para poder manipular los recursos de la api.
+
+-mensajes autodescriptivos
+--son completos con toda la infomacion necesaria para poder trabajar. mediatypes
+
+-hateoas
+links para poder seguir usando los recursos del api
+
+Protocolos sin estado.
+Cada una de las peticiones realizadas al web api tienen toda la informacion necesaria para que la peticion sea resuelta de manera satisfactoria.
+
+Cache
+las respuestas del web api se podran guardar en la cache del usuario.segun sea indicado.
+
+Sistema de capas.
+
+Codigo en Demanda.
+javascript.
+
+ANATOMIA DE UNA PETICION HTTP
+peticiones y respuestas http.
+
+peticiones http.
+peticion,cabecera y cuerpo.
+peticion: metodo-http url protocolo-http
+###################################
+Partes de una peticion.
+-----------------------------------
+Linea de peticion
+Estructura:
+metodo-http uri protocolo-http
+Ejemplo:
+GET/api/autores HTTP/1.1
+POST/test.html HTTP/1.1
+------------------------------------
+Cabecera: son metadados para enviar infromacion sobre la peticion
+Ejemplo:
+Host:en.wikipedia.org
+nombre de la cabecera es host
+valor de la cabecera es en.wikipedia.org
+------------------------------------
+Cuerpo de la peticion
+informacion adicional que se enviara al servidor.
+ejemplo:
+
+{
+"Nombre": "Felipe Gavilán",
+"Edad": 999
+}
+------------------------------------
+Ejemplo de peticion Completa
+=Linea de Peticion================
+POST/api/autores/ HTTP/1.1
+=3 cabeceras =====================
+Host:miWebApi.com
+Conten-Type: application/json
+Cache-Control: no-cache
+=Cuerpo de la peticion============
+{
+"Nombre": "Felipe Gavilán",
+"Edad": 999
+}
+
+###################################
+Respuesta HTTP
+###################################
+Linea de Estatus
+Cabecera
+Cuerpo(opcional)
+
+##################################
+ASP.NET CORE
+##################################
+Es la evolucion de ASPT. NET, se puede hacer aplicaciones para multiplataforma.
+
+Escalamiento horizontal, es cuando agregamos mas servidores para procesar las informacion.
+
+Escalamiento Horizontal es cuando mejoramos las caracteristicas de los servidores.
+
+###########################
+Visual Studio
+###########################
+
+breakpoint: cuando la ejecucion de la aplicacion llega al breakpoint se detiene.
+
+regla de ruteo: endpoint/controlador
+
+Crear un controloador
+CRUD de autores en la base de datos
+
+1.- creacion de la clase ENTITIES como carpeta
+2.- dentro de la carpeta se crea una clase autores
+
+WWWROOT
+LOS ARCHIVOS ESTATICOS DE NUESTRA APLICACION
+CSS,IMG,JS,LIB
+###########################
+PROGRAM.CS
+es donde se coloca la configuracion de nuestro webhost, se utiliza por defecto kestrel
+###########################
+STARTUP.CS
+se configuran servicios
+
+IConfiguration
+es la forma en la que asp.net core se puede interactuar con las fuentes de configuracion
+
+ConfigureServices:
+Inyeccion de dependencias: las clases van a indicar o permitir que sus dependencias puedan ser servidas por los clientes que quieren usar las clases.
+
+un servicio: es un componente comun de tu aplicacion el cual se utilisara en distintas partes de la aplicacion.
+
+
+VARIABLES DE AMBIENTE
+
+Apsettings.json
+
+angel@hotmail.com
+Scartissue1+
+Identity/Account/Manage

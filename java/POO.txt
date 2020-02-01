@@ -1,0 +1,118 @@
+>PROGRAMACION ORIENTADA A OBJETOS
+---------------------------------
+-OBJETOS(COSAS CON CARACTERISTICAS Y ACCIONES)
+-ATRIBUTOS(CARACTERISTICAS)
+-METODOS(ACCIONES)
+
+-->EJEMPLO1:
+::CARRO
+::->ATRIBUTOS(CARACTERISTICAS)
+-COLOR
+-MARCA
+-KM
+
+::->METODOS(ACCIONES)
+-ENCENDER
+-ACELERAR
+-FRENAR
+
+-CLASES
+ES UN CONJUNTO DE OBJETOS CON CARACTERISTICAS SIMILARES
+
+-->EJEMPLO DE CLASE
+::Coche::
+Atributos de la clase
+--color
+--marca
+--km
+Metodos de la clase
+--encender()
+--acelerar()
+--frenar()
+
+Creacion de un objeto
+::Coche1::
+atributos
+color: Azul
+Marca: Audi
+Km: 0
+::Coche2::
+Color: rojo
+Marca: Ferrari
+Km: 100
+#############################################
+CODIGO
+CREACION DE UNA CLASE
+public class Coche{
+------------------
+Atributos;
+Metodos;
+------------------
+}
+
+nombre clase + nombre objeto = new constructor()
+public class Coche = new Coche();
+
+Creacion de Proyecto sin la creacion de la clase main.
+
+creacion de un pacquete java sour pakage.
+
+creacion de las clases.
+###############################################
+CLASE COCHE
+public class Coche {
+    //atributos
+    String color;
+    String marca;
+    int km;
+    
+    //Metodo Main
+    public static void main(String [] args){
+    Coche coche1 = new Coche();
+    coche1.color = "Azul";
+    coche1.marca = "Volvo";
+    coche1.km = 0;
+    
+        System.out.println("Tu coche:"+coche1.marca);
+        System.out.println("Color:"+coche1.color);
+        System.out.println("Tiene "+coche1.km+" Kilometros");
+    }
+}
+###############################################
+CONCEPTO Y CREACION DE METODOS
+meotdo es una accoin o comportamiento de los objetos
+
+Estuctura
+modificador acceso + valor de retorno + nombre del metodo +(argumentos){
+---------------------------------
+codigo
+---------------------------------
+}
+
+EJEMPLOS:
+public void leerNumeros(){
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite un Numero:"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Digire otro Numero:"));
+    }
+    //Metodo Suma
+    public void suma(){
+    suma = num1 + num2;
+    }
+
+======PARAMETROS Y ARGUMENTOS==================
+Parametro: es una declaracion de variable u objeto.
+Argumento: Es un valor que se envia.
+
+delcaracion del metodo
+public void metodo(int a, String b){
+**parametros(int a, String b)
+}
+
+invocaion del metodo
+obejto.metodo(1,"Hola");
+**argumentos(1,"Hola")
+
+variables gobales afuera de un metodo o funcion
+variables locales dentro de un metodo o funcion
+
+

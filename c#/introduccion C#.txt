@@ -1,0 +1,45 @@
+﻿Lenguaje Orientado a Objetos.
+Librerias de .Net que ya son OpenSource
+IDE de visual studio 2019.
+
+//muestra una ventana con un mensaje de texto
+mbox + tab = MessageBox.Show("Test" o Variable);
+Variable debe de ser de tipo texto
+
+variables de tipo numericos
+int -> tipo entero
+uint -> tipo entero pero siempre positivo
+float -> tipo decimal
+double -> tipo decimal
+decimal -> tipo decimal muy grandes
+byte -> numeros menores a 256
+bool -> valores (true:false)
+
+ejemplo:
+int num1= 400;
+uint num1 = 500;
+float num1 = 32.2f;
+double num1 = 45.50;
+decimal num1 = 0954689.09384098480;
+byte num1 = 255;
+bool acceso = true;
+
+convertir un tipo de Variable a string
+Variable.ToString();
+Convert.
+bool acceso = true;
+
+DateTime fecha = DateTime.Today -> la fecha del sistema
+Console.WriteLine("La fecha es: "+fecha);
+
+//Para obtener la fecha en formato corto
+Console.WriteLine("La fecha es: "+fecha.ToShortDateString());
+
+//Para obtener solo el año de la fecha
+fecha.Year
+
+//Variable constante
+const string a = "Hola Bienvenido";
+
+//atajo para crear una propiedad
+prop + doble tab 
