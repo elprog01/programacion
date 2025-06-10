@@ -116,3 +116,4 @@ variables gobales afuera de un metodo o funcion
 variables locales dentro de un metodo o funcion
 
 
+hago un pequeño cambio para que haya conflictos cuando quiera subir
