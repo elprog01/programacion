@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PracticasRestServicesApplication<practicas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.jdai.observables.practicas.PracticasRestServicesApplication",
+            "projectName": "practicas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
